@@ -1,0 +1,17 @@
+
+# PostgreSQL Datenbank Konfiguration
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/moviestore
+    username: postgres
+    password: qwertz
+    driver-class-name: org.postgresql.Driver
+
+  # Hibernate Einstellungen
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
