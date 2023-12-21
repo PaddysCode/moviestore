@@ -24,7 +24,8 @@ public class MovieController {
 
     @GetMapping
     public List<Movie> getAllMovies(){
-       return movieRepository.findAll();
+        var movies = movieRepository.findAll();
+        return movies;
     }
 
 
